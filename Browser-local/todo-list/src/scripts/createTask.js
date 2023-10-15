@@ -1,8 +1,9 @@
-import { renderTasks, updateTasksInStorage } from './renderer';
-import { getItem, setItem } from './storage';
+import { renderTasks } from './renderer.js';
+import { getItem, setItem } from './storage.js';
 
 export const onCreateTask = () => {
   const taskTitleInputElem = document.querySelector('.task-input');
+
   const text = taskTitleInputElem.value;
 
   if (!text) {
@@ -12,17 +13,17 @@ export const onCreateTask = () => {
   taskTitleInputElem.value = '';
   const tasksList = getItem('tasksList') || [];
 
-  const newTask = {
+  const newTasksList = tasksList.concat({
     text,
     done: false,
     createDate: new Date().toISOString(),
     id: Math.random().toString(),
-  };
+  });
 
-  const newTasksList = [...tasksList, newTask];
-  updateTasksInStorage(newTasksList); // Обновление задач в localStorage.
+  setItem('tasksList', newTasksList);
 
-  renderTasks(newTasksList); // Рендер обновленного списка.
+  renderTasks();
+ 
 };
 
 
