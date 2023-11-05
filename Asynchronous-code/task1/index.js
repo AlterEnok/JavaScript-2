@@ -9,7 +9,7 @@ export const addImage = (imgSrc, callback) => {
     });
   
     imgElem.addEventListener('error', () => {
-      callback('Image load failed');
+        callback('Image load failed');
     });
   
     const containerElem = document.querySelector('.page');
