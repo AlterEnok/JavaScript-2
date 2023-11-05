@@ -1,4 +1,3 @@
-
 export const addImage = (imgSrc, callback) => {
     const imgElem = document.createElement('img');
     imgElem.setAttribute('alt', 'My photo');
@@ -15,10 +14,10 @@ export const addImage = (imgSrc, callback) => {
 
         imgElem.addEventListener('error', () => {
             containerElem.removeChild(imgElem);
-            callback(new Error('Image load failed'));
+            callback(new Error('Image load failed')); 
         });
     } else {
-        callback('Container not found');
+        callback(new Error('Container not found')); 
     }
 };
 
@@ -26,7 +25,7 @@ const imgSrc = 'https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial
 
 const onImageLoaded = (error, imgElem) => {
     if (error) {
-        console.log(error);
+        console.log(error.message); 
         return;
     }
 
