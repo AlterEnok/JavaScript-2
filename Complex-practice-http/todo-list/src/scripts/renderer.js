@@ -36,7 +36,7 @@ const createListItem = ({ text, done, id }) => {
 };
 
 export const renderTasks = (tasksList) => {
-    listElem.innerHTML = ''; // Clear the existing list
+    listElem.innerHTML = '';
     const tasksElems = tasksList.map(createListItem);
     listElem.append(...tasksElems);
 };
