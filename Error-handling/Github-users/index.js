@@ -9,7 +9,7 @@ import { showSpinner, hideSpinner } from './spinner.js';
 
 
 const defaultUser = {
-    avatar_url: 'https://avatars.githubusercontent.com/u/10001',
+    avatar_url: 'https://gromcode.s3.eu-central-1.amazonaws.com/front-end/javascript/lesson35/task3/default-page.png',
     name: '',
     location: '',
 
