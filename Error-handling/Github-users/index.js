@@ -9,7 +9,7 @@ import { showSpinner, hideSpinner } from './spinner.js';
 
 
 const defaultUser = {
-    avatar_url: 'https://github.githubassets.com/images/modules/logos_page/Octocat.png',
+    avatar_url: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
     name: '',
     location: '',
 
