@@ -9,7 +9,7 @@ import { showSpinner, hideSpinner } from './spinner.js';
 
 
 const defaultUser = {
-    avatar_url: 'https://cwestblog.com/wp-content/uploads/2020/02/logo-2582757_640-360x240.png',
+    avatar_url: 'https://avatars.githubusercontent.com/u/10001',
     name: '',
     location: '',
 
