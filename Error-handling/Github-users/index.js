@@ -9,7 +9,7 @@ import { showSpinner, hideSpinner } from './spinner.js';
 
 
 const defaultUser = {
-    avatar_url: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+    avatar_url: 'https://avatars3.githubusercontent.com/u10001',
     name: '',
     location: '',
 
